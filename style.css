@@ -2,9 +2,54 @@
 *{
     font-family: "Montserrat";
 }
-.results{
+body{
+    background-color: rgb(0, 170, 255);
+}
+h1{
+    text-align: center;
+    margin-top: 15%;
+    padding-left:2% ;
+}
+.container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container div{
+    display: flex;
+    background-color: black;
+    padding: 2%;
+    border-radius: 10px;
     
 
+}
+input{
+    width: 5cm;
+    margin-right: 10%;
+    padding: 0.8em;
+    margin-right: 35px;
+}
+button{
+    background-color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 3px;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-box span{
+    font-size: small;
+}
+.result-box{
+    margin:1.5% ;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: center;
 }
 
