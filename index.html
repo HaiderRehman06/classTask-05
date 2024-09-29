@@ -8,9 +8,33 @@
 </head>
 <body>
     <h1>Age Calculator</h1>
-    <label for="dob">Enter your date of birth</label><br>
-    <input type="date" id="dob" required>
-    <button onclick="calculateAge()">Calculate Age</button>
-    <script src="./script.js"></script>
+    <div class="container">
+        <input type="date" id="birthday" value="2000-01-01" />
+        <button onclick="calculateAge()">Calculate</button>
+    </div>
+
+    <div class="results">
+        <div class="result-box">
+            <h2 id="years">0</h2>
+            <span>Years</span>
+        </div>
+        <div class="result-box">
+            <h2 id="months">0</h2>
+            <span>Months</span>
+        </div>
+        <div class="result-box">
+            <h2 id="days">0</h2>
+            <span>Days</span>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
