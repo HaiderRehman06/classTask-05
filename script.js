@@ -12,10 +12,8 @@ function calculateAge() {
         years--;
     }
 
-    // Calculate months
     let months = (today.getMonth() - birthDate.getMonth() + 12) % 12;
 
-    // Calculate days
     const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     let days = today.getDate() - birthDate.getDate();
     if (days < 0) {
@@ -23,7 +21,6 @@ function calculateAge() {
     days += monthDays[prevMonth];
     }
 
-    // Update the results
     document.getElementById('years').textContent = years;
     document.getElementById('months').textContent = months;
     document.getElementById('days').textContent = days;
